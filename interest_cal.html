@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="interest_cal.css"></link>
+    <script src="interest_cal.js"></script>
+</head>
+<body>
+    <section class="home">
+        <div class="main_div">
+            <h1>SIMPLE INTEREST CALCULATOR</h1>
+            Amount:<input type="number" id="principle"><br/>
+            Rate<input type="range" id="rate" min="1" max="20" value="10.25" step="0.25" onchange="update_rate()"><br/>
+            <span id="rate_val">10.25</span>% <br/>
+            No.of Years:<input type="number" id="No_years" list="years"></br>
+            <datalist id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </datalist>
+            Interest:<span id="result"></span><br>
+            <button onclick="compute()">Calculate Interest</button>
+        </div>
+
+    </section>
+</body>
+</html>
